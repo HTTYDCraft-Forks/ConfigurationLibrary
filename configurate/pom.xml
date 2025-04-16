@@ -1,0 +1,33 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.httydcraft.ConfigurationLibrary</groupId>
+		<artifactId>main</artifactId>
+		<version>v1.0</version>
+	</parent>
+	<artifactId>configurate</artifactId>
+
+	<properties>
+		<!-- Dependencies -->
+		<configurate.version>4.1.2</configurate.version>
+	</properties>
+
+	<dependencies>
+		<!-- Core -->
+		<dependency>
+			<groupId>com.httydcraft.ConfigurationLibrary</groupId>
+			<artifactId>core</artifactId>
+			<version>${core.version}</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<!-- Sponge Configurate core -->
+		<dependency>
+			<groupId>org.spongepowered</groupId>
+			<artifactId>configurate-core</artifactId>
+			<version>${configurate.version}</version>
+		</dependency>
+	</dependencies>
+</project>

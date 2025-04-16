@@ -1,0 +1,49 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.httydcraft.ConfigurationLibrary</groupId>
+		<artifactId>main</artifactId>
+		<version>v1.0</version>
+	</parent>
+	<artifactId>example</artifactId>
+
+	<properties>
+		<!-- Dependencies -->
+		<spigot-api.version>1.18.2-R0.1-SNAPSHOT</spigot-api.version>
+	</properties>
+
+	<repositories>
+		<repository>
+			<id>spigot-repo</id>
+			<url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
+		</repository>
+	</repositories>
+
+	<dependencies>
+		<!-- Bukkit Configuration Library -->
+		<dependency>
+			<groupId>com.httydcraft.ConfigurationLibrary</groupId>
+			<artifactId>core</artifactId>
+			<version>${core.version}</version>
+			<scope>compile</scope>
+		</dependency>
+	
+		<!-- Bukkit Configuration Library -->
+		<dependency>
+			<groupId>com.httydcraft.ConfigurationLibrary</groupId>
+			<artifactId>bukkit</artifactId>
+			<version>${core.version}</version>
+			<scope>compile</scope>
+		</dependency>
+
+		<!-- Spigot API -->
+		<dependency>
+			<groupId>org.spigotmc</groupId>
+			<artifactId>spigot-api</artifactId>
+			<version>${spigot-api.version}</version>
+			<scope>provided</scope>
+		</dependency>
+	</dependencies>
+</project>

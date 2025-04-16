@@ -1,0 +1,41 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.httydcraft.ConfigurationLibrary</groupId>
+		<artifactId>main</artifactId>
+		<version>v1.0</version>
+	</parent>
+	<artifactId>velocity</artifactId>
+
+	<properties>
+		<!-- Dependencies -->
+		<velocity-api.version>3.0.1</velocity-api.version>
+	</properties>
+
+	<repositories>
+		<repository>
+			<id>velocity</id>
+			<url>https://nexus.velocitypowered.com/repository/maven-public/</url>
+		</repository>
+	</repositories>
+
+	<dependencies>
+		<!-- Core -->
+		<dependency>
+			<groupId>com.httydcraft.ConfigurationLibrary</groupId>
+			<artifactId>core</artifactId>
+			<version>${core.version}</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<!-- Velocity API -->
+		<dependency>
+			<groupId>com.velocitypowered</groupId>
+			<artifactId>velocity-api</artifactId>
+			<version>${velocity-api.version}</version>
+			<scope>provided</scope>
+		</dependency>
+	</dependencies>
+</project>
